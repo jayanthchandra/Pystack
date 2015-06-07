@@ -1,9 +1,10 @@
 import os
+#os.system("source openrc admin admin")
 print("1.List all user\n"
 	"2.List identity service catalog\n"
 	"3.Discover keystone endpoints\n"
 	"4.List all Service")
-ip=int(input())
+ip=int(input("Enter Option  :=> "))
 if ip==1:
 	os.system("keystone user-list")
 	
@@ -13,7 +14,7 @@ elif ip==2:
 elif ip==3:
 	os.system("keystone discover")
 	
-elif ip==3:
+elif ip==4:
 	os.system("keystone service-list")
 
 else:
